@@ -1,0 +1,84 @@
+@media screen and (max-width:430px){
+    .paymentmodal-container{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        scroll-behavior: smooth;
+        z-index: 2;
+    }
+    .close-icon{
+        position: absolute;
+        right: 0;
+        top: -20%;
+        font-size: 30px;
+    }
+    .close-icon:active{
+        opacity: 0.56;
+    }
+    .paymentmodal-div{
+        position: absolute;
+        width: 390px;
+        height: 300px;
+        background-color: white;
+        padding: 2rem 2rem;
+        animation: anime 5s none;
+    }
+    .paymentmodal-div-service{
+        /* border: 0.1px solid rgba(148, 140, 140, 0.11); */
+        padding: 1rem 0rem;
+        margin-bottom: 10px;
+    }
+    .paymentmodal-div-service .radioHolder{
+        margin-bottom: 5px;
+        /* border-bottom: 1px solid rgba(148, 140, 140, 0.71); */
+        padding: 0.7rem 0.5rem;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        position: relative;
+    }
+    .paymentmodal-div-service .radioHolder:first-child{
+        margin-bottom: 5px;
+        border-bottom: 1px solid rgba(148, 140, 140, 0.71);
+        padding: 0.7rem 0.5rem;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        position: relative;
+    }
+     .checkboxHolder{
+       margin-left: 15px;
+       margin: 20px 15px;
+    }
+     .checkboxHolder label{
+       margin-left: 15px;
+       font-size: 13px;
+    }
+    .paymentmodal-div-service .radioHolder label{
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    .paymentmodal-div-service .radioHolder input{
+        width: 30px;
+        height: 20px;
+    }
+  
+    .paymentmodal-div-service .radioHolder .icon{
+        position: absolute;
+        right: 0;
+        margin-right: 20px;
+    }
+}
+@keyframes anime {
+    0%   {bottom: 0px;}
+    25%  {bottom: 200px;}
+    50%{bottom: 200px;}
+    75%  {bottom: 200px}
+    100% {bottom: 200px;}
+}

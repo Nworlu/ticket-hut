@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import './App.css';
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+import PaymentComponent from './components/PaymentComponent';
+import ChooseTicketPage from './pages/ChooseTicketPage';
+import EventDetailPage from './pages/EventDetailPage';
+import HomePage from './pages/HomePage';
+import Notfound from './pages/Notfound';
+import OrderSummaryPage from './pages/OrderSummaryPage';
+import ReceiptPage from './pages/ReceiptPage';
+
 
 function App() {
+  let location = useLocation()
+  const hideNavbar = location.pathname === '/versus-pay'
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    { !hideNavbar && 
+      <Navbar/>
+    }
+      <Routes>
+        <Route path='/' element={<HomePage/>} />
+        <Route path='/event' element={<EventDetailPage/>}/>
+        <Route path='*' element={<Notfound/>}/>
+        <Route path='/choose' element={<ChooseTicketPage/>} />
+        <Route path='/order' element={<OrderSummaryPage/>} />
+        <Route path='/receipt' element={<ReceiptPage/>} />
+        <Route path='/*' index element={<PaymentComponent/>}/>
+      </Routes>
+      { !hideNavbar &&
+      <Footer/>
+      }
+    </>
   );
 }
 

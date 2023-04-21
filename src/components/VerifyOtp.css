@@ -1,0 +1,111 @@
+.VerifyOtp-modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* opacity: 0.4; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.VerifyOtp-container{
+    width: 354px;
+    height: 251px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.VerifyOtp-container h2{
+    font-size: 14px;
+    color: #999999;
+    margin-top: 10px;
+}
+.VerifyOtp-div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30px;
+}
+.VerifyOtp-div img{
+    width: 30px;
+    height: 30px;
+}
+.VerifyOtp-div-ticket{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.VerifyOtp-div-ticket .name-ticket{
+    margin-left: 55px;
+    font-size: 13px;
+}
+.VerifyOtp-div-ticket p{
+    font-size: 13px;
+    color: black;
+    
+}
+.VerifyOtp-div-pay{
+    display: flex;
+}
+.VerifyOtp-div-pay p.price-ticket{
+    margin-left: 10px;
+    color: black;
+}
+.VerifyOtp-container form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+}
+.VerifyOtp-container form .card-number{
+    width: 100%;
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+.VerifyOtp-container form .card-number input{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 1.3px solid #999999;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 17px;
+}
+.VerifyOtp-container form .card-expiry{
+    margin: 10px 0;
+}
+.VerifyOtp-container form .card-expiry input:first-child{
+   margin-right: 10px;
+}
+.VerifyOtp-container form .card-expiry input{
+    padding: 10px;
+    width: 145px;
+    border: 1.3px solid #999999;
+    border-radius: 10px;
+}
+.VerifyOtp-container .secured-by{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.VerifyOtp-container .versus-pay{
+    display: flex;
+    align-items: center;
+}
+.versus-pay p{
+    font-size: 12px;
+    margin-left: 20px;
+}
+.versus-pay .icon{
+    font-size: 11px;
+}
+.secured-by p.by{
+    font-size: 18px;
+    font-weight: bolder;
+}

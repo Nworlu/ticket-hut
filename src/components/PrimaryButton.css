@@ -1,0 +1,16 @@
+.outer-button-container{
+    width: 117px;
+}
+
+.outer-button-container button{
+    width: 100%;
+    /* height: 50px; */
+    color: white;
+    background-color: #B83618;
+    border: none;
+    font-size: 16px;
+    padding: 15px 10px;
+}
+.outer-button-container button:active{
+    opacity: 0.75;
+}
