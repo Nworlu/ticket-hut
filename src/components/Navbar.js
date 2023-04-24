@@ -23,14 +23,14 @@ function Navbar() {
       <div className={toggle?"navbar-links":"navbar-links-active"}>
         {/* <div className="navbar-input"> */}
             <div className="navbar-product">
-            <input type={'text'} placeholder={'Search'} />
+            <input  type={'text'} placeholder={'Search'} />
             <FaSearch className="icon"/>
             </div>
             <div className={"navbar-dropmenu"}>
-            <select>
+            <select id="select-host"> 
                 <option >Select Department</option>
-                <option >Computer Science</option>
-                <option>History</option>
+                <option value={'csc'}>Computer Science</option>
+                <option value={'his'}> History</option>
             </select>
             </div>
             <NavLink>
