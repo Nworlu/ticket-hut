@@ -3,14 +3,17 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #F4F6F8;
+    background-color: #ff5531;
     padding: 2rem 4rem;
     font-size: 14px;
 }
 .eventdetail-div{
+
     display: flex;
     margin-bottom: 60px;
     justify-content: space-between;
+    background-color: #FFFFFF;
+    padding: 1rem ;
 }
 .eventdetail-div-detail{
     /* width: 510px; */
@@ -176,11 +179,15 @@
     height: 110px;
     color: #949494;
 }
-
+.eventdetail-container {
+    padding: 1rem 2rem;
+}
 @media screen and (max-width:430px){
-    .eventdetail-container {
-        padding: 1rem 2rem;
+    .navbar-container-active{
+        margin-bottom: 2%;
+        margin-top: 5%;
     }
+
     .eventdetail-div-detail {
        display: flex;
        flex-direction: column-reverse;
