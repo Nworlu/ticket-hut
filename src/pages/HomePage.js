@@ -6,7 +6,7 @@ import PrimaryButton from '../components/PrimaryButton'
 function HomePage() {
   return (
     <div className='homepage-container'>
-      <h2>The very best events</h2>
+      <h2 className='hero-sectoin'>The very best events</h2>
       <div className='homepage-div'>
         <div className='homepage-event'>
         <div className='homepage-image-container'>
