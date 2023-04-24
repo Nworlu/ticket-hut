@@ -7,30 +7,40 @@
     align-items: center;
 }
 .homepage-container h2{
-    position: absolute;
+    position: relative;
     top: 20%;
     left: 4%;
     font-size: 36px;
     font-weight: 400;
 }
+
+
 .homepage-div{
+    position: relative;
     margin-top: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     flex-wrap: wrap;
 }
 .homepage-event{
-    margin-bottom: 2rem;
+    position:relative;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5%;
+    border-bottom:4px dashed #ffffff ;
+    overflow:hidden;
+    background: #161616;
+    color: #ffff;
 }
 .homepage-image-container{
-    width: 300px;
-    height: 200;
+    width: 100%;
+    height: auto;
     cursor: pointer;
-    margin: 0 10px;
 }
 .homepage-image-container img{
     width: 100%;
-    height: 100%;
+    height: auto;
+
 }
 .homepage-event .hompage-event-detail{
     margin-top: 1rem;
@@ -38,7 +48,43 @@
 .hompage-event-detail p{
     margin: 1rem 0;
 }
+.homepage-event-title{
+    font-weight:800;
+    font-size:34px;
+    text-transform: uppercase;
+    color: #ff5521;
+}
+.homepage-event-about{
+    font-weight:200;
+    font-size:x-small;
+    letter-spacing: normal;
+    padding: 0rem .5rem;
+}
+.homepage-event-date-time{
+    display: flex;
+    font-weight: 900;
+    font-size:medium;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding-top: 10%;
 
+}
+.homepage-event-host-price{
+    display: flex;
+    font-weight: 900;
+    font-size: larger;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding-top: 5%;
+
+}
+.homepage-event-host{
+    font-size:small;
+    width: 45%;
+}
+.homepage-event-price::before{
+    content: "₦ "; 
+}
 @media screen and (max-width:430px){
     .homepage-container {
         width: 100%;
@@ -48,21 +94,23 @@
         padding: 1rem 1rem;
         align-items: center;
     }
+
     .homepage-container h2 {
-        position: absolute;
+        /* position: relative; */
         top: 7%;
-        left: 6%;
-        font-size: 36px;
-        font-weight: 400;
+        font-size: larger;
+        font-weight: 200;
+        text-transform:uppercase;
     }
-    .homepage-image-container {
-        width: 370px;
-        height: 200;
-        cursor: pointer;
-        margin: 0 10px;
-        margin-top: 40px;
+    .brand-text{
+        font-size: 60px;
+        /* color: #ff5521; */
+        /* font-style: italic; */
+        font-weight: 900;
+
     }
     .homepage-event .hompage-event-detail {
         margin-left: 0.5rem;
     }
+
 }
