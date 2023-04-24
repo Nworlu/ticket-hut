@@ -5,7 +5,7 @@
     position: relative;
     padding: 1rem 4rem;
     justify-content: space-between;
-    background-color: #F4F6F8;
+    background-color: #FFFFFF;
 
 }
 .navbar-img-container{
@@ -35,7 +35,7 @@
     padding: 15px 30px;
     margin-right: 20px;
     border: none;
-    border: 1px solid black;
+    border: 1px solid #181818;
     width: 100%;
     border-radius: 20px;
 }
@@ -43,9 +43,9 @@
     position: absolute;
     left: 0;
     top: 29%;
-    border: 1px solid #B83618;
+    border: 1px solid #FF5531;
     font-size: 23px;
-    background-color: #B83618;
+    background-color: #FF5531;
     padding: 3px;
     color: white;
     border-radius: 16px;
@@ -80,19 +80,22 @@
         justify-content: space-between;
         /* border-bottom: 3px solid #B83618; */
         /* border: 2px solid black; */
-        background-color: #F4F6F8;
+        background-color: #FFFFFF;
     }
     .navbar-img-container {
         margin-top: 0px;
         position: absolute;
         top: 2%;
         left: 5%;
+
+
     }
     .navbar-img-container-ative{
         margin-top: 0px;
         position: absolute;
         top: 11%;
         left: 5%;
+
     }
     .menu-icon{
         position: absolute;
@@ -126,7 +129,7 @@
     .navbar-links .navbar-product input {
         padding: 10px 30px;
         border: none;
-        border: 1px solid black;
+        border: 1px solid #181818;
         width: 100%;
         border-radius: 20px;
         margin: 0px 0;
@@ -147,5 +150,9 @@
     .navbar-links-active{
         display: none;
         transition: all 0.4s ease;
+    }
+    .navbar-logo{
+        width: 40%;
+        height: auto;
     }
 }

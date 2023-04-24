@@ -4,7 +4,7 @@ import "./Navbar.css";
 import PrimaryButton from "./PrimaryButton";
 import { FaHamburger, FaSearch } from 'react-icons/fa'
 import { FiMenu } from 'react-icons/fi'
-import logo  from '../assets/logo.png'
+import logo  from '../assets/full logo black.png'
 
 function Navbar() {
   const [toggle, setToggle] = useState(false)
@@ -16,7 +16,7 @@ function Navbar() {
   
     <div className={toggle?"navbar-container":"navbar-container-active"}>
       <div className={toggle?"navbar-img-container":"navbar-img-container-ative"}>
-        <img src={logo} />
+        <img src={logo} className="navbar-logo"/>
       </div>
       {/* <FiMenu */}
       <FiMenu type="button" onClick={handleMenu} className={toggle?"menu-icon":"menu-icon-active"}/>
