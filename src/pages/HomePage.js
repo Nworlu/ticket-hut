@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './HomePage.css'
+import axios from "axios";
 import imageBack from '../assets/back-image.png'
 import PrimaryButton from '../components/PrimaryButton'
+const apiUrl = 'https://app.tixhut.co/api'
 
 function HomePage() {
+  useEffect(()=>{
+    async function getEvent(){
+      try {
+        const res = await axios.get(`${apiUrl}/events`)
+        console.log(res)
+      } catch (error) {
+        
+      }
+    }
+    getEvent()
+  },[])
   return (
     <div className='homepage-container'>
       <h2 className='hero-section'>The very best <span className='brand-text'> events</span></h2>
