@@ -3,14 +3,22 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #F4F6F8;
+    background-color: #ff5531;
     padding: 2rem 4rem;
     font-size: 14px;
+    padding: 1rem 1rem;
+    overflow: hidden;
+
+
 }
 .eventdetail-div{
+
     display: flex;
-    margin-bottom: 60px;
     justify-content: space-between;
+    background-color: #FFFFFF;
+    padding: 1rem ;
+    overflow: hidden;
+
 }
 .eventdetail-div-detail{
     /* width: 510px; */
@@ -25,14 +33,15 @@
 }
 .eventdetail-div-detail p.desc{
     margin-top: 20px;
-    color: #949494;
+    
     height: 110px;
     /* width: 100%; */
     width: 510px;
 }
 .eventdetail-img-container{
-    width: 590px;
-    height: 390px;
+    position: relative;
+    width: 100%;
+    height: auto;
 }
 .eventdetail-img-container img{
     width: 100%;
@@ -54,7 +63,7 @@
     padding: 17px;
 }
 .eventdetail-buy{
-    border: 2px solid #3B126F;
+    /* border: 2px solid #181818; */
     height: 115px;
     border-radius: 10px;
     padding: 20px;
@@ -72,7 +81,7 @@
     align-items: center;
 }
 .eventdetail-buy-quan .icons{
-    background-color: #3B126F;
+    background-color: #181818;
     color: white;
     border-radius: 20px;
     width: 30px;
@@ -85,9 +94,8 @@
     align-items: center;
 }
 .eventdetail-info .icons{
-    background-color: #3B126F;
+    background-color: #181818;
     color: white;
-    border-radius: 20px;
     width: 20px;
     height: 20px;
     padding: 5px;
@@ -166,21 +174,54 @@
 }
 .organized-container .organized{
     font-size: 16px;
-    color: #949494;
+    
 }
 .organized-container .contact{
     font-size: 16px;
-    color: #1A552F;
+
 }
 .eventdetail-about-organisers-desc{
     height: 110px;
-    color: #949494;
+    
+}
+.one{
+    border-bottom: 2px dashed #ff5531;
+    clip-path: polygon(
+      0 0%,
+      5% 0,
+      100% 0,
+      100% 10%,
+      100% 95%,
+      95% 100%,
+      5% 100%,
+      0% 95%,
+      0% 10%
+    )
+
+  }
+.two{
+    clip-path: polygon(
+        5% 0%,
+        10% 0,
+        95% 0,
+        100% 10%,
+        100% 100%,
+        100% 100%,
+        0% 100%,
+        0% 100%,
+        0% 10%
+      )
+  
 }
 
 @media screen and (max-width:430px){
-    .eventdetail-container {
-        padding: 1rem 2rem;
+    .navbar-container-active{
+        margin-bottom: 2%;
+        margin-top: 5%;
+        overflow: hidden;
+
     }
+
     .eventdetail-div-detail {
        display: flex;
        flex-direction: column-reverse;
@@ -189,31 +230,52 @@
         width: 100%;
     }
     .eventdetail-img-container {
-        width:350px;
-        height:243px;
+        width:100%;
+        height:auto;
     }
     .eventdetail-div {
         flex-direction: column;
         justify-content: center;
+        overflow: hidden;
     }
     .eventdetail-buy-ticket-div {
         /* border: 2px solid black; */
+        margin-top: 1rem;
         width: 100%;
         display: flex;
         justify-content: flex-end;
     }
     .eventdetail-div-detail p.desc {
         margin-top: 20px;
-        color: #949494;
-        height: 110px;
-        /* width: 100%; */
-        width: 350px;
+        height: auto;
+        width: 100%;
+        font-size: smaller;
+        font-weight: 300;
+        letter-spacing: normal;
+        margin-bottom: 20px;
+;
     }
     .eventdetail-shortmessage {
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
+        
+    }
+    .total-div{
+        margin-top: 1rem;
+        font-size: x-large;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    .total-div p{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .total{
+        font-size: x-large;
+        font-weight: 900;
     }
     .eventdetail-div-detail-time{
         margin-top: 20px;
@@ -225,18 +287,41 @@
         justify-content: space-between;
         width: 100%;
     }
-    .eventdetail-about-detail .event-date p {
-        margin: 15px 0;
-        font-size: 20px;
+    .bg-white{
+        background-color: #FFFFFF;
+    }
+    .event-date p {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3rem ;
+        margin-bottom: 2rem ;
+        font-size: larger;
         width: 100%;
+        font-weight: 900;
+        text-transform: uppercase;
+
+    }
+    .helper{
+        font-weight: 400;
+        font-size: medium;
     }
     .eventdetail-about-organisers-container {
         width: 100%;
-        height: 304px;
+        height: 100%;
         background: #FFFFFF;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 10px;
         padding: 23px 30px;
+        font-weight:400;
+        font-size: x-small;
+        word-spacing: normal;
+        letter-spacing: normal;
     }
-   
+   .event-title{
+    font-weight: 700;
+    text-transform: uppercase;
+   }
+   .tix-cut{
+    border: #181818;
+   }
 }

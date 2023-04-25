@@ -4,6 +4,7 @@ import axios from "axios";
 import imageBack from '../assets/back-image.png'
 import PrimaryButton from '../components/PrimaryButton'
 const apiUrl = 'https://app.tixhut.co/api'
+import './department'
 
 function HomePage() {
   useEffect(()=>{
@@ -57,13 +58,14 @@ numquam</p>
     <div className='homepage-event-date-time'><span className='date'>April  25th</span> <span className='time'>23:00</span></div>
 
   </div>
+
   <div className='homepage-event'>
 
 <div className='homepage-image-container'>
     <img src={imageBack} />
 </div>
 
-<div className='hompage-event-detail'>
+<div className='hompage-event-detail '>
   <div className='homepage-event-host-price'>
   <span className='homepage-event-host'>department of natural and a pplied scince </span><span className='homepage-event-price'>2500</span>
 </div>
@@ -75,7 +77,7 @@ numquam</p>
     <div className='homepage-event-date-time'><span className='date'>April  25th</span> <span className='time'>23:00</span></div>
 
   </div>
-  <div className='homepage-event'>
+  <div className='homepage-event csc'>
 
 <div className='homepage-image-container'>
     <img src={imageBack} />
