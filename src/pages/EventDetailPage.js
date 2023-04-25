@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./EventDetailPage.css";
 import detailImage from "../assets/detail-image.png";
 import {
