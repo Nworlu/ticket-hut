@@ -20,6 +20,7 @@
         justify-content: space-between;
         padding: 1rem 1rem;
         background-color: #F4F6F8;
+        position: absolute;
     }
     .footer-container p{
         margin: 5px 0;

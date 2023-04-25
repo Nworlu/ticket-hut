@@ -8,7 +8,20 @@
     background-color: #FFFFFF;
 
 }
+.navbar-container-active{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 1rem 4rem;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+
+}
 .navbar-img-container{
+    margin-top: 23px;
+}
+.navbar-img-container-ative{
     margin-top: 23px;
 }
 .navbar-links {
@@ -21,7 +34,16 @@
 .menu-icon{
     display: none;
 }
+.menu-icon-active{
+    display: none;
+}
 .navbar-links{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.navbar-links-active{
     margin-top: 30px;
     display: flex;
     align-items: center;
@@ -31,6 +53,10 @@
     /* margin-right: 30px; */
     width: 100%;
 }
+.navbar-links-active .navbar-product{
+    margin-right: 30px;
+    width: 300px;
+}
 .navbar-links .navbar-product input{
     padding: 15px 30px;
     /* margin-right: 20px; */
@@ -38,6 +64,14 @@
     border: 2px solid #181818;
     width: 100%;
     /* border-radius: 20px; */
+}
+.navbar-links-active .navbar-product input{
+    padding: 15px 30px;
+    margin-right: 20px;
+    border: none;
+    border: 1px solid #181818;
+    width: 100%;
+    border-radius: 20px;
 }
 .navbar-product .icon{
     position: absolute;
@@ -51,10 +85,16 @@
     border-radius: 16px;
     margin-left: 5px;
 }
-.navbar-links .navbar-dropmenu  select{
+.navbar-links .navbar-dropmenu select{
     width: 300px;
 }
-.navbar-links.navbar-dropmenu  select{
+.navbar-links .navbar-dropmenu select{
+    padding: 10px 30px;
+}
+.navbar-links-active .navbar-dropmenu select{
+    width: 300px;
+}
+.navbar-links-active .navbar-dropmenu select{
     padding: 10px 30px;
 }
 @media screen and (max-width:430px){
@@ -68,9 +108,6 @@
         padding: 1rem 1rem;
         justify-content: space-between;
         padding-top: 200px;
-
-
-        /* border: 2px solid black; */
     }
     .navbar-container-active{
         position: absolute;

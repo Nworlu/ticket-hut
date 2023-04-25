@@ -27,7 +27,8 @@
         height: 300px;
         background-color: white;
         padding: 2rem 2rem;
-        animation: anime 5s none;
+        border-radius: 20px;
+        /* animation: anime 5s none; */
     }
     .paymentmodal-div-service{
         /* border: 0.1px solid rgba(148, 140, 140, 0.11); */
@@ -39,7 +40,9 @@
         /* border-bottom: 1px solid rgba(148, 140, 140, 0.71); */
         padding: 0.7rem 0.5rem;
         display: flex;
+        /* flex-direction: column; */
         align-items: center;
+        justify-content: space-between;
         width: 100%;
         position: relative;
     }
@@ -63,6 +66,10 @@
     .paymentmodal-div-service .radioHolder label{
         font-size: 20px;
         padding-left: 20px;
+        letter-spacing: 2px;
+    }
+    .paymentmodal-div-service .radioHolder img{
+        
     }
     .paymentmodal-div-service .radioHolder input{
         width: 30px;
@@ -75,10 +82,10 @@
         margin-right: 20px;
     }
 }
-@keyframes anime {
+/* @keyframes anime {
     0%   {bottom: 0px;}
     25%  {bottom: 200px;}
     50%{bottom: 200px;}
     75%  {bottom: 200px}
     100% {bottom: 200px;}
-}
+} */
